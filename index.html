@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<!-- saved from url=(0052)https://getbootstrap.com/docs/4.0/examples/checkout/ -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="https://getbootstrap.com/favicon.ico">
+
+    <title>Convert a Lesson Plan for use with the Challenge Board</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="./include/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="./include/form-validation.css" rel="stylesheet">
+  </head>
+
+  <body class="bg-light">
+
+    <div class="container">
+      <div class="py-5 text-center">
+        <img class="d-block mx-auto mb-4" src="https://nedlearning.com/images/logo.png" alt=""  height="72">
+        <h2>Convert a Lesson Plan for use with the Challenge Board</h2>
+<!--        <p class="lead">Below is an example form built entirely with Bootstrap's form controls. Each required form group has a validation state that can be triggered by attempting to submit the form without completing it.</p>-->
+      </div>
+
+      <div class="row">
+
+        <div class="col-md-8 order-md-1">
+
+          <form class="needs-validation" novalidate="">
+            <div class="row">
+              <div class="col-md-6 mb-3">
+                <label for="firstName">Subject</label>
+                <input type="text" class="form-control" id="firstName" placeholder="eg Science" value="" required="">
+                <div class="invalid-feedback">
+                  Enter the subject for your Big Idea
+                </div>
+              </div>
+              <div class="col-md-6 mb-3">
+                <label for="lastName">Component</label>
+                <input type="text" class="form-control" id="lastName" placeholder="eg Chemistry" value="" required="">
+                <div class="invalid-feedback">
+                  Enter the component for your Big Idea
+                </div>
+              </div>
+              <div class="col-md-12 mb-3">
+                <label for="email">The Big Idea <span class="text-muted">(Required)</span></label>
+                <input type="email" class="form-control" id="email" placeholder="you@example.com" required="">
+                <div class="invalid-feedback">
+                  Please enter your Big Idea
+                </div>
+              </div>
+
+
+              <div class="col-md-6 mb-3">
+                <label for="firstName">Supporting Idea 1</label>
+                <input type="text" class="form-control" id="firstName" placeholder="" value="" required="">
+                <div class="invalid-feedback">
+                  Write your first supporting idea
+                </div>
+              </div>
+              <div class="col-md-6 mb-3">
+                <label for="lastName">Supporting Idea 2</label>
+                <input type="text" class="form-control" id="lastName" placeholder="" value="" required="">
+                <div class="invalid-feedback">
+                  Valid your second supporting idea
+                </div>
+              </div>
+            </div>
+
+
+            <div class="mb-3">
+              <label for="address">Resource 1 (link to Video or Powerpoint)</label>
+              <input type="text" class="form-control" id="address" placeholder="" required="">
+            </div>
+
+            <div class="mb-3">
+              <label for="address">Resource 2 (link to Video or Powerpoint)</label>
+              <input type="text" class="form-control" id="address" placeholder="" required="">
+            </div>
+
+            <div class="mb-3">
+              <label for="address">Resource 3 (link to Video or Powerpoint)</label>
+              <input type="text" class="form-control" id="address" placeholder="" required="">
+            </div>
+
+            <div class="mb-3">
+              <label for="username">Your Challenge Question</label>
+              <div class="input-group">
+
+                <input type="text" class="form-control" id="challengequestion" placeholder="eg Why are volcanoes different in Washington compared to the UK" required="">
+                <div class="invalid-feedback" style="width: 100%;">
+                  Your name
+                </div>
+              </div>
+            </div>
+
+            <div class="mb-3">
+              <label for="username">Name</label>
+              <div class="input-group">
+
+                <input type="text" class="form-control" id="username" placeholder="Your Name" required="">
+                <div class="invalid-feedback" style="width: 100%;">
+                  Your name
+                </div>
+              </div>
+            </div>
+
+          <hr class="mb-4">
+            <button class="btn btn-primary btn-lg btn-block" type="submit">Send your Challenge</button>
+          </form>
+        </div>
+      </div>
+
+      <footer class="my-5 pt-5 text-muted text-center text-small">
+        <p class="mb-1">© 2017-2018 Company Name</p>
+        <ul class="list-inline">
+          <li class="list-inline-item"><a href="https://getbootstrap.com/docs/4.0/examples/checkout/#">Privacy</a></li>
+          <li class="list-inline-item"><a href="https://getbootstrap.com/docs/4.0/examples/checkout/#">Terms</a></li>
+          <li class="list-inline-item"><a href="https://getbootstrap.com/docs/4.0/examples/checkout/#">Support</a></li>
+        </ul>
+      </footer>
+    </div>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="./include/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
+    <script src="./include/popper.min.js"></script>
+    <script src="./include/bootstrap.min.js"></script>
+    <script src="./include/holder.min.js"></script>
+    <script>
+      // Example starter JavaScript for disabling form submissions if there are invalid fields
+      (function() {
+        'use strict';
+
+        window.addEventListener('load', function() {
+          // Fetch all the forms we want to apply custom Bootstrap validation styles to
+          var forms = document.getElementsByClassName('needs-validation');
+
+          // Loop over them and prevent submission
+          var validation = Array.prototype.filter.call(forms, function(form) {
+            form.addEventListener('submit', function(event) {
+              if (form.checkValidity() === false) {
+                event.preventDefault();
+                event.stopPropagation();
+              }
+              form.classList.add('was-validated');
+            }, false);
+          });
+        }, false);
+      })();
+    </script>
+
+
+</body></html>
